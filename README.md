@@ -44,4 +44,6 @@ Documents whose licence does not allow redistribution are referenced by URL only
 
 | Week | Focus | Deliverable | Status |
 |---|---|---|---|
-| W1 | System map + project scope | README + docs | ✅ |
+| W1 | System map + project scope | [Project scope](docs/week1_project_scope.md), [observation sheet](docs/week1_observation_sheet.md), [system map](docs/week1_system_map.png) | ✅ |
+| W2 | Requirements, evaluation criteria + V1 architecture | [Requirements](docs/week2_requirements.md), [evaluation criteria](docs/week2_evaluation_criteria.md), [V1 architecture](docs/week2_architecture_v1.png), [architecture decisions](docs/week2_architecture_decisions.md) | ✅ |
+| W3 | Data inventory + V1 data pipeline | [Notebook](notebooks/week3_pipeline.ipynb), [data inventory](docs/week3_data_inventory.md), [pipeline diagram](docs/week3_pipeline_diagram.png), [pipeline decisions](docs/week3_pipeline_decisions.md), [Part B manifest](data/week3_manifest.json), [pipeline output](data/pipeline_v1/documents/) | ✅ |

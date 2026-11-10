@@ -1,0 +1,15 @@
+# Data Inventory — Sabah Pre-Trip Checker
+
+Version: 1.0
+
+Colab notebook: [week3_pipeline.ipynb](https://colab.research.google.com/drive/15oP6IHdPKyiKQ7UdBxEpb6Tz5lNCa2zN?usp=sharing)
+
+| Source ID | Filename / URL | Type and purpose | Version / date / owner | Access / rights | Inspection evidence |
+|---|---|---|---|---|---|
+| S01 | `sabahparks_mount_kinabalu_climbing.pdf`<br>https://sabahparks.org.my/services/mount-kinabalu-climbing | Unstructured text (official web page saved as PDF). Primary source of official procedural rules for Mount Kinabalu (booking, self check-in, fees, changes and cancellations, health restrictions) for FR3; source identity and dates for RAI5. | Page states "Last Updated: 8 November 2026"; retrieved 2026-11-08; owner: Sabah Parks | Publicly accessible; © Sabah Parks, all rights reserved. Raw copy stored in `data/raw/` with attribution and a removal-on-request disclaimer (`data/README.md`) | 10 pages, 11,741 characters, no empty pages. Key rules are readable (e.g. "Online self-check-in becomes available five days before the climb"). Issues: cookie banner repeated 10 times, navigation menu and footer text, letter-spaced headings (e.g. "L E M A I N G"), and sentences split across lines. |
+| S02 | `sabahparks_terms_and_conditions.pdf`<br>https://reservation.sabahparks.org.my/files/TermsandCondition.pdf | Unstructured text (official PDF). Booking terms for Mount Kinabalu (permit validity, payment terms, cancellation and change-of-reservation rules) for FR3. | No version date in the document; retrieved 2026-11-08; owner: Sabah Parks (reservation system administered with Teraz Global) | Publicly accessible; rights held by Sabah Parks. Raw copy stored in `data/raw/` under the same disclaimer | 3 pages; numbered clauses (e.g. 1.2, 5.1.3) extract correctly. Issues: many blank lines around bold headings; page 3 content ("What is a PR Holder?") is an image and yields no text; section 6 (delivery of e-tickets) is not relevant to pre-trip requirements. |
+| S03 | `gec_haze_safety_advisory.pdf`<br>https://gec.org.my/wp-content/uploads/2025/07/20250723_haze_a4_poster_01.pdf | Unstructured text (bilingual poster PDF). Secondary source for haze reminders (FR5) and the API scale; links travellers to the official APIMS portal. | Poster dated 22 July 2025; retrieved 2026-11-08; owner: Global Environment Centre (NGO) | Publicly accessible; rights held by Global Environment Centre. Raw copy stored in `data/raw/` under the same disclaimer; labelled as a secondary source | 1 page, 4,195 characters. Issues: multi-column layout produces mixed reading order, with Malay and English text interleaved and headings separated from their content; some words are merged (e.g. "ACTIVITIES0 - 50"). |
+
+**Storage:** raw files are kept in `data/raw/`; prepared outputs are written to `data/processed/` and `data/pipeline_v1/`, with provenance recorded in `data/week3_manifest.json`.
+
+**Known coverage gap:** V1 sources cover Mount Kinabalu and haze only. Sources for Sipadan Island and Tunku Abdul Rahman Marine Park will be added in a later iteration.

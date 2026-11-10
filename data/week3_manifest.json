@@ -1,0 +1,17 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-10T00:33:42.571611+00:00",
+  "records": [
+    {
+      "source_id": "S01",
+      "source_filename": "sabahparks_mount_kinabalu_climbing.pdf",
+      "source_sha256": "e44c77e57554c6513f811addd11e53f6b7c61cb6747880def4f655876c8e6fc7",
+      "prepared_output": "data/processed/prepared_text.jsonl",
+      "prepared_sha256": "cfebdfb40ae93d5db66a88bc4d2a4aedfbc80987fa9bfb71e144418d64d8094a",
+      "processing_note": "paragraph-aware-char-500 (cookie banner removed, paragraphs restored)",
+      "source_version": "Page states 'Last Updated: 8 November 2026'; retrieved 2026-11-08",
+      "access_rights": "© Sabah Parks, all rights reserved; copy included with attribution and removal-on-request disclaimer",
+      "status": "Prepared; quality review pending"
+    }
+  ]
+}
