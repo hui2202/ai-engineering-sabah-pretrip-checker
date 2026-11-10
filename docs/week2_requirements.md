@@ -26,7 +26,7 @@ Version: 1.0
 |---|---|---|
 | FR1 | Extract trip details (destinations, travel dates, activities and traveller category: Malaysian or international) from a free-text trip description, and ask for any missing detail needed to determine requirements. | Assume missing travel dates or traveller category. |
 | FR2 | List all pre-trip requirements that apply to the in-scope destinations, activities and traveller category described. | Include requirements that are not supported by the source documents. |
-| FR3 | Provide an official source reference and last-checked date for each requirement, and label secondary sources separately. | Present unofficial or unsupported information as official. |
+| FR3 | Provide, for each requirement, the original supporting sentence from the official source, the source reference and its last-checked date, and label secondary sources separately. | Present unofficial or unsupported information as official. |
 | FR4 | Calculate the date by which each time-bound requirement must be completed based on the travel dates, and warn when a deadline has passed or bookings have not yet opened. | State a deadline for a requirement whose timing is not specified in the source documents. |
 | FR5 | Warn about seasonal risks (northeast monsoon, haze) for the destination and travel month, with a link to the official real-time information source. | Forecast weather or air quality for specific travel dates. |
 | FR6 | State clearly when a destination or topic is not covered, and decline out-of-scope requests (bookings, full itineraries, destinations outside scope) with an appropriate redirect. | Invent rules for destinations or topics that are not covered. |

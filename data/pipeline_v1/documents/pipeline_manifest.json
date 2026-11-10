@@ -1,6 +1,6 @@
 {
   "pipeline_version": "week3-v1",
-  "generated_at_utc": "2026-11-10T00:48:06.608444+00:00",
+  "generated_at_utc": "2026-11-10T01:37:56.670723+00:00",
   "data_type": "documents",
   "configuration": {
     "chunk_size": 500,
@@ -36,6 +36,6 @@
       14476
     ]
   },
-  "source_version": "Not verified",
-  "access_rights": "Not verified — check before sharing"
+  "source_version": "Page states 'Last Updated: 8 November 2026'; retrieved 2026-11-08",
+  "access_rights": "© Sabah Parks, all rights reserved; copy included with attribution and removal-on-request disclaimer"
 }
