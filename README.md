@@ -38,7 +38,7 @@ Domestic and international travellers planning independent trips to Sabah, parti
 - OpenDOSM Monthly Air Pollution dataset (CC BY 4.0) — https://open.dosm.gov.my/data-catalogue/air_pollution
 - GEC Haze Safety Advisory for Outdoor Activities (PDF) — https://gec.org.my/wp-content/uploads/2025/07/20250723_haze_a4_poster_01.pdf
 
-Copies of the official sources are kept in data/raw/ for non-commercial educational use so that the pipeline can be reproduced. All rights remain with their owners, and any document will be removed on request (see data/README.md).
+Copies of the official sources are kept in [`data/raw/`](data/raw/) for non-commercial educational use so that the pipeline can be reproduced. All rights remain with their owners, and any document will be removed on request (see [`data/README.md`](data/README.md)).
 
 ## Weekly Progress
 
@@ -47,3 +47,6 @@ Copies of the official sources are kept in data/raw/ for non-commercial educatio
 | W1 | System map + project scope | [Project scope](docs/week1_project_scope.md), [observation sheet](docs/week1_observation_sheet.md), [system map](docs/week1_system_map.png) | ✅ |
 | W2 | Requirements, evaluation criteria + V1 architecture | [Requirements](docs/week2_requirements.md), [evaluation criteria](docs/week2_evaluation_criteria.md), [V1 architecture](docs/week2_architecture_v1.png), [architecture decisions](docs/week2_architecture_decisions.md) | ✅ |
 | W3 | Data inventory + V1 data pipeline | [Notebook](notebooks/week3_pipeline.ipynb), [data inventory](docs/week3_data_inventory.md), [pipeline diagram](docs/week3_pipeline_diagram.png), [pipeline decisions](docs/week3_pipeline_decisions.md), [Part B manifest](data/week3_manifest.json), [pipeline output](data/pipeline_v1/documents/) | ✅ |
+| W4 | Data quality, bias + responsible data review | [Notebook](notebooks/week4_quality.ipynb), [data quality report](docs/week4_data_quality_report.md), [validation failures](docs/week4_validation_failures.csv), [duplicate review](docs/week4_duplicate_review.csv), [coverage by source](docs/week4_coverage_by_source.png), [reviewed corpus](data/prepared_chunks_clean.jsonl) | ✅ |
+
+> **Data for later stages:** from Topic 7 (Week 9) onwards, the pipeline uses the reviewed Topic 4 corpus ([`data/prepared_chunks_clean.jsonl`](data/prepared_chunks_clean.jsonl) and [`data/chunks_clean.pkl`](data/chunks_clean.pkl)), not the original Topic 3 output. The Topic 4 quality gate is **GO WITH CONDITIONS** (Mount Kinabalu only); see the [data quality report](docs/week4_data_quality_report.md).

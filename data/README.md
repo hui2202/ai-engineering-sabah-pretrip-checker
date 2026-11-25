@@ -4,6 +4,7 @@
 |---|---|---|---|---|
 | `raw/sabahparks_terms_and_conditions.pdf` | https://reservation.sabahparks.org.my/files/TermsandCondition.pdf | Sabah Parks | 2026-11-08 | All rights reserved by the owner; included under the disclaimer below |
 | `raw/sabahparks_mount_kinabalu_climbing.pdf` | https://sabahparks.org.my/services/mount-kinabalu-climbing (web page saved as PDF) | Sabah Parks | 2026-11-08 | All rights reserved by the owner; included under the disclaimer below |
+| `raw/sabahparks_mount_kinabalu_climbing.html` | https://sabahparks.org.my/services/mount-kinabalu-climbing (HTML snapshot, SHA-256 recorded in the Week 4 notebook) | Sabah Parks | 2026-11-25 | All rights reserved by the owner; included under the disclaimer below |
 | `raw/gec_haze_safety_advisory.pdf` | https://gec.org.my/wp-content/uploads/2025/07/20250723_haze_a4_poster_01.pdf | Global Environment Centre | 2026-11-08 | All rights reserved by the owner; included under the disclaimer below |
 
 ## Disclaimer
