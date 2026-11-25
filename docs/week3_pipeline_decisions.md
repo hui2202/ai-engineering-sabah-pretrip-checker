@@ -40,6 +40,32 @@ Colab notebook: [week3_pipeline.ipynb](https://colab.research.google.com/drive/1
 | Batch or streaming | **Batch.** Official rules change occasionally rather than continuously, so the pipeline is rerun manually when a source is updated or re-downloaded. Streaming would add complexity without benefit. |
 | Cleaning scope | Only noise justified by inspection evidence was removed (the cookie banner repeated 10 times). Additional rules were not added, to avoid altering official wording. |
 
+## Structured Rule Store — Data Plan
+
+The pipeline above prepares the **Official Document Store**. The **Structured Rule Store** in the Week 2 architecture will be curated manually from the reviewed chunks, so that each rule stays linked to the official sentence that supports it.
+
+| Field | Purpose |
+|---|---|
+| `rule_id` | Unique rule identifier |
+| `site`, `activity`, `traveller_category` | Applicability filters for Rule Matching (FR2, RAI1) |
+| `requirement` | The requirement shown to the traveller |
+| `timing_type` | `opens` (a step becomes available) or `due_by` (a step must be completed), so that the Deadline Calculator does not treat an opening date as a deadline (FR4) |
+| `offset_days` | Days relative to the reference date (e.g. the climb date) |
+| `source_record_id`, `source_sentence` | Link to the supporting chunk and its original official sentence (FR3, RAI4) |
+| `last_checked` | Date the rule was last verified against the source (RAI5) |
+
+**Example rules from the reviewed corpus**
+
+| rule_id | requirement | traveller_category | timing_type | offset_days | source_record_id | source_sentence |
+|---|---|---|---|---|---|---|
+| R-MK-001 | Complete online self check-in and prepare the completed indemnity form for each climber | All | opens | −5 (climb date) | `sabahparks_mount_kinabalu_climbing-0008` | "Online self-check-in becomes available five days before the climb." |
+| R-MK-002 | Notify the reservation team of a date change | All | due_by | −14 (original climb date) | `sabahparks_mount_kinabalu_climbing-0019` | "Give at least two weeks’ notice." |
+
+**Validation and updates**
+
+- Every rule's `source_sentence` must appear word for word in the chunk named by `source_record_id`; this can be checked automatically (RAI4).
+- When a source is re-downloaded and its SHA-256 changes, every rule linked to that source is flagged for re-verification. Superseded rules are kept with an end date instead of being deleted, so earlier answers remain traceable (RAI5, NFR6).
+
 ## Accepted Limitations
 
 - **Single source in V1:** only S01 is processed. S02 (booking terms) and S03 (haze poster) are listed in the data inventory and will be added in a later iteration; Sipadan Island and Tunku Abdul Rahman Marine Park are not yet covered.

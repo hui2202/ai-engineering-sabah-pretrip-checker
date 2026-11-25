@@ -35,7 +35,6 @@ Domestic and international travellers planning independent trips to Sabah, parti
 
 - Sabah Parks Terms and Conditions (PDF) — https://reservation.sabahparks.org.my/files/TermsandCondition.pdf
 - Sabah Parks Mount Kinabalu Climbing guide — https://sabahparks.org.my/services/mount-kinabalu-climbing
-- OpenDOSM Monthly Air Pollution dataset (CC BY 4.0) — https://open.dosm.gov.my/data-catalogue/air_pollution
 - GEC Haze Safety Advisory for Outdoor Activities (PDF) — https://gec.org.my/wp-content/uploads/2025/07/20250723_haze_a4_poster_01.pdf
 
 Copies of the official sources are kept in [`data/raw/`](data/raw/) for non-commercial educational use so that the pipeline can be reproduced. All rights remain with their owners, and any document will be removed on request (see [`data/README.md`](data/README.md)).

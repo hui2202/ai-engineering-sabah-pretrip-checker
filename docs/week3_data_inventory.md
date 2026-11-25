@@ -13,3 +13,5 @@ Colab notebook: [week3_pipeline.ipynb](https://colab.research.google.com/drive/1
 **Storage:** raw files are kept in `data/raw/`; prepared outputs are written to `data/processed/` and `data/pipeline_v1/`, with provenance recorded in `data/week3_manifest.json`.
 
 **Known coverage gap:** V1 sources cover Mount Kinabalu and haze only. Sources for Sipadan Island and Tunku Abdul Rahman Marine Park will be added in a later iteration.
+
+**Source dropped after inspection:** the OpenDOSM Monthly Air Pollution dataset, listed as a data source in Week 1, was not inventoried. Its catalogue lists only `date`, `pollutant` and `concentration`, with no state or station field, so it gives national averages only and cannot show in which months haze affects Sabah (FR5). Haze reminders therefore rely on S03 and a link to the official APIMS portal; an official source for seasonal patterns in Sabah will be sought in a later iteration.
